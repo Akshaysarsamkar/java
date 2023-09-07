@@ -1,0 +1,15 @@
+public class Throws {
+	
+	public static void sub(int a,int b) throws ArithmeticException{
+		int ans = a/b;
+		System.out.println(ans);
+	}
+	public static void main(String[] args) {
+		try{
+		sub(5,0);
+		}
+		catch(Exception e){
+			System.out.println("Exception");
+		}
+	}
+}
