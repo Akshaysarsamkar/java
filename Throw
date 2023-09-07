@@ -1,0 +1,22 @@
+ class MyException extends Exception {
+	public String toString(){
+	   return "Negative value not accepted";
+	}
+	
+	public String getMassage(){
+	return "Nagative value not accepted";
+	}
+}
+public class Throw{
+	public static void main(String[] args) {
+		int a = -6;
+		try{
+		if(a < 0)
+			throw new  MyException();
+		else
+		     System.out.println(a);	  
+     	}catch(Exception e){
+			System.out.println(e);
+		}	
+	}
+}
