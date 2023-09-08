@@ -1,0 +1,51 @@
+public class StringMethod{
+	public static void main(String[] args) {
+		String s1 = "Akshay";
+		String s = new String("  Akshay sarsamkar");
+		System.out.println(s.getClass());
+		
+		//charAt() method
+		char c = s.charAt(2);
+		System.out.println(c);
+		
+		//length()method
+		System.out.println("Length is:" + s.length());
+		
+		//substring method();
+		String sub = s.substring(8,14);
+		System.out.println("Sub string is:"+sub);
+		
+		//contains() method
+		System.out.println(s.contains("A"));
+		
+		//equal method
+		System.out.println(s.equals(s1));
+		
+		//isEmpty() method
+		System.out.println(s.isEmpty());
+		
+		//concate()
+		String cat = s.concat(" Good boy");
+		System.out.println(cat);
+		
+		//replace method 
+		String rep = s.replace("s","#");
+		System.out.println(rep);
+		
+		//trim method 
+		String t = s.trim();	
+		System.out.println(t);
+		
+		//splite method 
+		String [] split = s.split(" ");
+		for(String i : split){
+			System.out.println(i);
+		}
+		
+		//intern method 
+		System.out.println(s.intern());
+		
+		//indexOf() method 
+		System.out.println(s.indexOf("s"));
+	}
+}
