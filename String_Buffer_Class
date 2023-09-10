@@ -1,0 +1,62 @@
+public class BufferString{
+	public static void main(String[] args) {
+		
+		//create StringBuffer class object
+		StringBuffer a = new StringBuffer();
+	    
+	    //append method
+	    a.append("Akahay");
+	    a.append("sarsamkar");
+	    System.out.println(a);
+	    
+	    //reverse String
+	    System.out.println(a.reverse());
+	    
+	    //delete method();
+	   System.out.println(a.delete(1,4));
+	    
+	    //insertethod()
+	    System.out.println(a.insert(3," you"));
+	    
+	    //replace method 
+	    a.replace(1,3,"##");
+	    System.out.println(a);
+	    
+	    //capacity() method 
+	  System.out.println(a.capacity());
+	  
+	  //charAt method 
+	  System.out.println("Character of 5 index:"+a.charAt(5));
+	  
+	  //indexOf method
+	  System.out.println("Index of # is:"+a.indexOf("#"));
+	  
+	  //lastindexof() method 
+	  System.out.println("LastIndexof Given char:"+a.lastIndexOf("o"));
+	    
+	    //setCharAt(int index,charch)
+	    a.setCharAt(1,'P');
+	    System.out.println(a);
+	    
+	    //Setlength & length method
+	   a.setLength(12);
+	   System.out.println(a.length());
+	   
+	   //ensurecapacity method
+	   a.ensureCapacity(9);
+	   System.out.println(a.length());
+	   
+	   //subSequence method
+	  System.out.println(a.subSequence(2,12));
+	  
+	  //substring method
+	  
+	  String s = a.substring(1,6);
+	  System.out.println(s);
+	  System.out.println(s.getClass());
+	  
+	  //toString method 
+	  s = s.toString();
+	  System.out.println(s.getClass());
+	}
+}
